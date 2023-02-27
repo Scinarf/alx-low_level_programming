@@ -14,6 +14,12 @@ void puts_half(char *str)
 	int middle = length / 2;
 	int a;
 
+	if ((length % 2) == 1)
+	{
+		middle = ((length + 1) / 2);
+
+	}
+
 	for (a = middle; a < length; a++)
 	{
 		putchar(str[a]);
