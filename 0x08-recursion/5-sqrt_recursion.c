@@ -1,12 +1,12 @@
 #include "main.h"
 
+int root(int c, int i);
+
 /**
   * _sqrt_recursion - Returns the square root of the number
   * @n: holds the number we need a square for
   * Return: the square root
   */
-
-int root(int c, int i);
 
 int _sqrt_recursion(int n)
 {
@@ -17,7 +17,7 @@ int _sqrt_recursion(int n)
 
 /**
   * root - Searches for the square root and returns it
-  * @n: holds the number we need a square for
+  * @c: holds the number we need a square for
   * @i: Holds the root
   * Return: the square root
   */
