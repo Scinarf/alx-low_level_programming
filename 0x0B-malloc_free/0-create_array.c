@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
-  * main - returns either NULL or a pointer
+  * create_array- returns either NULL or a pointer
   * @size: size for memory allocation
   * @c: Holding character
   * Return: NULL or a pointer
@@ -14,7 +14,7 @@ char *create_array(unsigned int size, char c)
 	unsigned int p;
 	char *ptr;
 
-	ptr = (char *)malloc(size*sizeof(char));
+	ptr = (char *)malloc(size * sizeof(char));
 
 	if (size == 0 || ptr == NULL)
 		return (NULL);
