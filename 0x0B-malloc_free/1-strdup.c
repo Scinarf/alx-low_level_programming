@@ -12,11 +12,15 @@
 char *_strdup(char *str)
 {
 	unsigned int a;
-	unsigned int b = strlen(str);
+	unsigned int b;
 	char *ptr;
 
 	if (str == NULL)
+	{
 		return (NULL);
+	}
+
+	b = strlen(str) + 1;
 
 	ptr = (char *)malloc(b * sizeof(char));
 
