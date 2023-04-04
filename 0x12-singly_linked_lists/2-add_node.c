@@ -5,7 +5,7 @@
 /**
   * add_node - adds a new node to our list
   * @head: holds our list
-  * @str: holds the value we want 
+  * @str: holds the value we want
   * Return: the address of the new list
   */
 
@@ -13,6 +13,9 @@ list_t *add_node(list_t **head, const char *str)
 {
 	list_t *ptr = malloc(sizeof(list_t));
 	unsigned int a = strlen(str);
+
+	if (ptr == NULL)
+		return (NULL);
 
 	ptr->str = strdup(str);
 	ptr->len = a;
